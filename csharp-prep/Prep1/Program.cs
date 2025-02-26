@@ -7,6 +7,8 @@ class Program
         Console.WriteLine("Hello Prep1 World!");
         Console.Write("Please enter your first name: ");
         string firstName = Console.ReadLine();
-        Console.WriteLine($"{firstName}");
+        Console.Write("Please enter your Last name: ");
+        string lastName = Console.ReadLine();
+        Console.WriteLine($"Your name is: {firstName} {lastName}");
     }
 }
