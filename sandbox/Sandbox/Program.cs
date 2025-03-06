@@ -1,41 +1,26 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        // Console.WriteLine("Hello Sandbox World!");
-        // Console.WriteLine("Hello CSE 210");
-        // Console.WriteLine("Please enter your name: ");
-        // string name = Console.ReadLine();
-        // Console.WriteLine($"{name}");
-        // for(float i = 3000.234F; i > 200.234; i -= 100.234235F)
+        Console.WriteLine("Hello Today - March 4, 2025");
+
+        // double x = 10;
+        Circle myCircle = new Circle(10);
+        myCircle.DisplayCircleArea();
+        Cylinder myCylinder = new Cylinder(10, myCircle);
+        double volume = myCylinder.GetVolume();
+        Console.WriteLine($"The cylinder volume is: {volume}");
+        // Circle myCircle2 = new Circle(20);
+        // myCircle.DisplayCircleArea();
+        
+        // for(int i = 0; i < 30 ; i++)
         // {
-        //     Console.WriteLine($"{i}: Bob");
+        //     myCircle.SetRadius(i);
+        //     double circleArea = myCircle.GetArea();
+        //     Console.WriteLine($"{i}: Circle area is: {circleArea}");
+
+        //     // myCircle.DisplayCircleArea();
         // }
-
-        // bool correctInput = false;
-        // while(!correctInput)
-        bool correctInput;
-        do
-        {
-            Console.Write("Please input you age: ");
-            int age = int.Parse(Console.ReadLine());
-            if (age >= 0 && age < 120)
-            {
-                Console.WriteLine($"Your age is: {age}");
-                correctInput = true;
-            }
-            else
-                correctInput = false;
-        } while(!correctInput);
-
-
-        Random newRandomNumber = new Random();
-        for(int i = 0; i < 100; i++)
-        {
-            int number = newRandomNumber.Next(1, 1000);
-            Console.WriteLine($"(i): (number)");
-        }
     }
+
 }
