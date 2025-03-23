@@ -5,8 +5,9 @@ class Policeman : Person
     : base(firstName, lastName, age)
     {
         _weapon = weapon;
+        _height = 80;
     }
-    public string DisplaypolicManInfo()
+    public string DisplayPolicManInfo()
     {
         return $"{_weapon}, Info: {DisplayPersonInfo()}";
     }

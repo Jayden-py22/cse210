@@ -3,6 +3,7 @@ class Person
     private string _firstName;
     private string _lastName;
     private int _age;
+    protected int _height;
 
     public Person(string firstName, string lastName, int age)
     {
@@ -13,6 +14,20 @@ class Person
 
     public string DisplayPersonInfo()
     {
-        return $"{_firstName} {_lastName}, Age: {_age}";
+        return $"Information: {_firstName} {_lastName}, Age: {_age}";
+    }
+
+    public int GetHeight()
+    {
+        return _height;
+    }
+
+    public void SetHeight(int height)
+    {
+        if (height < 40 || height > 90)
+            _height = 60;
+        else
+            _height = height;
     }
 }
+

@@ -9,7 +9,12 @@ class Program
 
         Console.WriteLine($"{myPerson.DisplayPersonInfo()}");
 
-        Policeman myPoliceman = new Policeman("Gun", "Bob", "Bobba", 97);
-        Console.WriteLine($"{myPoliceman.DisplaypolicManInfo()}");
+        Policeman myPoliceman = new Policeman("Taser", "Joe", "Mamma", 32);
+        Console.WriteLine($"{myPoliceman.DisplayPolicManInfo()}");
+        Console.WriteLine($"{myPoliceman.DisplayPersonInfo()}");
+
+        myPoliceman.SetHeight(73);
+        // myPoliceman._height = 76;
+        Console.WriteLine($"Police Man Height: {myPoliceman.GetHeight()} inches");
     }
 }
