@@ -11,4 +11,14 @@ class Policeman : Person
     {
         return $"{_weapon}, Info: {DisplayPersonInfo()}";
     }
+
+    public override string GetName()
+    {
+        return $"Captain {base.GetName()}";
+    }
+
+    public override string GetHobbies()
+    {
+        return "Police work";
+    }
 }

@@ -29,5 +29,12 @@ class Person
         else
             _height = height;
     }
+
+    public virtual string GetName()
+    {
+        return $"{_firstName} {_lastName}";
+    }
+
+    public abstract string GetHobbies();
 }
 
